@@ -9,7 +9,7 @@ from psycopg2.extras import execute_values
 
 BASE_DIR = Path(__file__).resolve().parent
 ENV_FILE = BASE_DIR / ".env.test"
-EXPECTED_DATABASE = "metrosnack_financial_test"
+EXPECTED_DATABASE = "metrosnack_financial_dev"
 
 if not ENV_FILE.exists():
     raise RuntimeError(
